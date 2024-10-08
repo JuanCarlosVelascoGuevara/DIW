@@ -1,0 +1,80 @@
+#colores-fondos{
+    background-color: red;
+    color: rgb(50, 210, 100);
+}
+#tipografia>h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    font-weight: 100;
+ 
+}
+#tipografia>p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-weight: 100;
+    line-height: 100px;
+}
+#espaciado>div>ul>li{
+margin: 10px;
+text-align: center;
+}
+#bordes-sombras>div{
+    border-radius: 5pxs;
+    box-shadow: 10px 10px 10px black;
+}
+#posicionamiento>div{
+position: relative;
+}
+#posicionamiento>div>footer{
+    position: absolute;
+}
+#productos>li{
+    list-style-type: georgian;
+    list-style-position:outside;
+}
+#botones>button{
+background-color: blanchedalmond;
+border-radius: 3px;
+color: lightblue;
+padding: 5px;
+}
+#tablas>table>tr>th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 3px;
+    text-align: center;
+
+}
+
+#contenedor>p{
+margin-bottom: 15px;
+}
+#contenedor>ul>li{
+    padding: 10px;
+}
+#imagenes>img{
+    width: 150px;
+    height: 100px;
+    border: 5px black;
+    border-radius: 5px;
+}
+#formulario>form>input,textarea{
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-color: aqua;
+    border-radius: 10px;
+}  
+
+#enlaces,a:hover{
+color: blueviolet;
+text-decoration:line-through ;
+}
+#efectos-texto>p{
+text-transform: uppercase;
+letter-spacing: 3%;
+text-shadow: 3px 3px 3px blue;
+}
+
+#elementos-linea>#contenedor>.elemento{
+display:inline-block;
+}
