@@ -19,7 +19,7 @@ margin: 10px;
 text-align: center;
 }
 #bordes-sombras>div{
-    border-radius: 5pxs;
+    border-radius: 5px;
     box-shadow: 10px 10px 10px black;
 }
 #posicionamiento>div{
