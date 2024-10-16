@@ -1,0 +1,88 @@
+/*1.*/
+.contenedor_flex{
+    background-color: lightgrey;
+    width:90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;   
+    margin-bottom: 20px; 
+}
+.flex-item{
+    background-color: cornflowerblue;
+    padding:50px;
+}
+/*2.*/
+.contenedor_flex2{
+    background-color: lightgrey;
+    width:90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;   
+    margin-bottom:20px; 
+}
+.flex-item2{
+    background-color: cornflowerblue;
+    padding:50px;
+}
+/*3.*/
+.contenedor_flex3{
+    background-color: lightgrey;
+    width:90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom:20px; 
+}
+.flex-item3{
+    background-color: cornflowerblue;
+    padding:50px;
+}
+/*4.*/
+.contenedor_flex4{
+    background-color: lightgrey;
+    width:90%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom:20px; 
+}
+.flex-item4{
+    background-color: cornflowerblue;
+    padding:50px;
+}
+/*5*/
+.contenedor_flex5{
+    background-color: lightgrey;
+    width:90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+    margin-bottom: 20px; 
+}
+.flex-item5{
+    background-color: cornflowerblue;
+    padding:50px;
+}
+.flex-item5:last-child{
+    background-color: purple;
+    flex-grow: 2;
+}
+/*6*/
+.contenedor_flex6{
+    background-color: lightgrey;
+    width:50%;
+    height:50%;
+    display:flex;
+    align-items:center;
+    margin-bottom:20px;
+    flex-wrap: wrap;
+}
+.flex-item6{
+    background-color: cornflowerblue;
+    padding:50px;
+}
