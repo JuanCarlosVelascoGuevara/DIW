@@ -15,16 +15,25 @@ body{
     background-color: #239B56;
     color: #fff;
     width: 90%;
-    /* max-width: 1200px; */
+    max-width: 1200px;
     height: var(--height-nav);
     margin:0 auto;
 }
-.nav_contenedor{
+
+.contenedor>h1{
+    align-content: flex-start;
+}
+.nav_contenedor>ul{
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
+    margin: 10px;
     align-items: center;
     height: 100%;
+    list-style: none;
+    color: #fff;
+    
 }
+
 .inicio{
     display: flex;
     align-items: center;
@@ -46,4 +55,17 @@ body{
 }
 .inicio_parrafo{
     font-size: 2vw;
+}
+.btn_continuar{
+    font-size: 2vw;
+    background-color: #1E8449;
+    color: white;
+    border-radius: 6px;
+    margin-top: 1.5em;
+    padding: 5px 15px;
+    border: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
 }
