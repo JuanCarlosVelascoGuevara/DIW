@@ -20,12 +20,17 @@ body{
     max-width: 1200px;
     height: var(--height-nav);
 }
-.nav_contenedor>ul{
+.nav_contenedor{
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
+    margin: 10px;
     align-items: center;
     height: 100%;
+    list-style: none;
+    color: #fff;
+    
 }
+
 .inicio{
     display: flex;
     align-items: center;
@@ -61,3 +66,4 @@ body{
 a{
     text-decoration: none;
 }
+
