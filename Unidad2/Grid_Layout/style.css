@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    font-family: 'montserrat', sans-serif;
+    background-color: #212734;
+}
+h1{
+    font-size: 2.5rem;
+    color:white;
+}
+.container{
+    max-width: 1300px;
+    padding: 20px;
+}
+.grid-wrapper{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap:20px;
+}
+.caja{
+    background-color: white;
+    border-radius: 10px;
+    padding:30px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    border-radius: 15px;
+    width: 100%;
+    margin-bottom:40px;
+}
+.caja-1{
+    grid-column:1;
+    grid-row: 1/5;
+}
+.caja-2{
+    grid-column:2;
+    grid-row: 1/3;
+}
+.caja-3{
+    grid-column: 3;
+    grid-row: 1/4;    
+}
+.caja-4{
+    grid-column:4;
+    grid-row:1/2;
+}
+.caja-6{
+    grid-column: 4;
+    grid-row:2/3;
+}
+p{
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+a{
+    text-align: center;
+    color:white;
+    font:bold;
+    margin-top:auto;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 5px;
+    border-radius: 10px;
+    width: 100%;
+}
+.btn-brown{
+    background-color: #D5C67A;
+}
+.btn-brown:hover{
+    background-color: #bb7ad5;
+}
+.btn-orange{
+    background-color: #ffbb05;
+}
+.btn-orange:hover{
+    background-color: #8f05ff;
+}
+#grid{
+    padding: 20px;
+}
+@media (max-width: 600px) {
+    .grid-wrapper{
+        display:grid;
+        grid-template-columns: 1;
+        gap:20px;
+        justify-content: space-between;
+    }
+    .caja-1{
+        grid-row:1/2;
+    }
+    .caja-2{
+        grid-row:2/3;
+    }
+    .caja-3{
+        grid-row:3/4;
+    }
+    .caja-4{
+        grid-row:4/5;
+    }
+    .caja-5{
+        grid-row:5/6;
+    }
+    .caja-6{
+        grid-row:6/7;
+    }
+}
