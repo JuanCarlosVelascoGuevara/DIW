@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <figure>
+         <img src="img/Designer.jpeg"alt="imagen 800x600" style="width: 800px; height: 600px;" />
+         <figcaption>Imagen 800x600</figcaption>
+     </figure>
+ 
+
+     <picture>
+         <source srcset="img/Designer.jpeg" type="image/png" />
+         <source srcset="img/Designer.jpeg" type="image/webp" />
+         <source srcset="img/Designer.jpeg" type="image/jpg" />
+         <img src="" alt="">
+     </picture>
+ 
+
+     <picture>
+         <source srcset="img/Designer.jpeg" media="(max-width: 350px)" />
+         <source srcset="img/Designer.jpeg" media="(min-width: 351px) and (max-width: 1024px)" />
+         <source srcset="img/Designer.jpeg" media="(min-width: 1024px)" />
+         <img src="img/Designer.jpeg" alt="">
+     </picture>
+</body>
+</html>
