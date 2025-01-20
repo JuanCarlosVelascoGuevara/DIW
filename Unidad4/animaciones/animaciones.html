@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="animaciones.css">
+</head>
+<body>
+    <img src="estrella.png" class="estrella">
+    <div class="snowflakes-container">
+        <div class="snowflake" style="--i:1;"></div>
+        <div class="snowflake" style="--i:2;"></div>
+        <div class="snowflake" style="--i:3;"></div>
+        <div class="snowflake" style="--i:4;"></div>
+        <div class="snowflake" style="--i:5;"></div>
+        <div class="snowflake" style="--i:6;"></div>
+        <div class="snowflake" style="--i:7;"></div>
+        <div class="snowflake" style="--i:8;"></div>
+        <div class="snowflake" style="--i:9;"></div>
+        <div class="snowflake" style="--i:10;"></div>
+    </div>
+    
+    <div class="box">
+        <span class="num">2</span>
+        <span class="num">0</span>
+        <span class="num">2</span>
+        <span>4</span>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const snowflakes = document.querySelectorAll('.snowflake');
+            snowflakes.forEach(snowflake => {
+                const duration = Math.random() * (20 - 10) + 10;
+                const delay = Math.random() * -20;
+                snowflake.style.animationDuration = `${duration}s`;
+                snowflake.style.animationDelay = `${delay}s`;
+            });
+        });
+    </script>
+</body>
+</html>

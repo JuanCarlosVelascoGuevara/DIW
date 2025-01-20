@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background: #262626;
+    background-image: url('navidad.jpg');
+    background-size: cover;
+    position: relative; 
+}
+
+.estrella{
+    display: none;
+}
+
+@keyframes snow {
+    0% {
+        transform: translateY(-100px) translateX(calc(100px * var(--i)));
+    }
+    100% {
+        transform: translateY(100vh) translateX(calc(-100px * var(--i))); 
+    }
+}
+.snowflake {
+    position: absolute;
+    top: -50px;
+    width: 5px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: snow linear infinite;
+}
+
+.box {
+    position: absolute;
+    cursor: pointer;
+}
+
+.box::before {
+    content: '3... 2... 1...';
+    position: absolute;
+    top: -0.75em;
+    width: 100%;
+    color: #fff;
+    text-shadow: 0 0 5px #ffffff;
+    text-align: center;
+    font-size: 2em;
+    transition: 1s;
+}
+
+.box:hover::before {
+    transform: translateY(-100px);
+    opacity: 0;
+    filter: blur(30px);
+}
+
+.box::after {
+    content: 'Feliz año nuevo';
+    position: absolute;
+    left: 0;
+    top: -0.75em;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    transition: 1s;
+
+    transform: translateY(100px);
+    opacity: 0;
+    filter: blur(30px);
+}
+
+.box:hover::after {
+    transform: translateY(0px);
+    opacity: 1;
+    filter: blur(0px);
+}
+
+.box span {
+    display: inline-block;
+    color: #fff;
+    text-shadow: 0 0 20px #ffffff;
+    font-size: 10em;
+    font-weight: bold;
+    transition: 2s;
+    filter: blur(1px);
+}
+
+.box span:last-child {
+    color: #ff236e;
+}
+
+.box:hover span:last-child {
+    transform: rotate(45deg) translateY(-200px);
+    opacity: 0;
+    filter: blur(30px);
+}
+
+.box span:nth-child(3):after {
+    content: '5';
+    position: absolute;
+    color: #1dff4e;
+    transform: rotate(-45deg) translateY(200px);
+    opacity: 0;
+    filter: blur(30px);
+    transition: 2s;
+}
+.box::after{
+    color: #ffd700;
+    text-shadow: 0 0 5px #bea200;
+}
+
+.box:hover span:nth-child(3):after {
+    transform: rotate(0deg) translateY(0px);
+    opacity: 1;
+    filter: blur(0px);
+}
+
+
+@keyframes starAnimation {
+    0% {
+        transform: translateX(-50vw);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(50vw);
+        opacity: 0;
+    }
+}
+
