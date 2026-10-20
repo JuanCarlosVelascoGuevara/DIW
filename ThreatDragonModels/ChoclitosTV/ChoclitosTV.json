@@ -1,0 +1,29 @@
+{
+  "version": "2.6.2",
+  "release_version": "1.0",
+  "released_at": "2026-10-18",
+  "summary": {
+    "title": "ChoclitosTV",
+    "owner": "Juan Carlos Velasco",
+    "description": "ChoclitosTV",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "ChoclitosTV",
+        "diagramType": "STRIDE",
+        "placeholder": "Descripción de nuevo diagrama STRIDE",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": [],
+        "description": "ChoclitosTV"
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "Juan Carlos Velasco",
+    "threatTop": 0
+  }
+}
