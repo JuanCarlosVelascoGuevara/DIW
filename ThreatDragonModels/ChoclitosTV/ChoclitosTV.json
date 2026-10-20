@@ -76,7 +76,9 @@
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [],
+              "crossingFlows": [
+                "72494da6-642f-43ec-b007-8054a77a0292"
+              ],
               "containedElements": [
                 "ec9ecd89-a80b-47c4-bfef-1a02945f9c26",
                 "9f130e04-a1df-4aaa-acc4-985899c593b6"
@@ -114,6 +116,7 @@
                 "50487bf4-aa6c-48a2-bd1d-cf66f29b1f4b",
                 "436367a0-a607-46f7-8cbd-513cde0e9643",
                 "e551fb33-aad3-4709-832f-a522b547b9c6",
+                "6b2f496b-d3f8-4b1a-9c70-ca3585640a95",
                 "1c0dbe09-c232-41d3-9ae0-afe0f037a921"
               ],
               "containedElements": [
@@ -1960,6 +1963,102 @@
             "target": {
               "cell": "da9598a7-b885-4c43-884f-0c7e883e110a",
               "port": "54f1bc75-3654-4bdd-944d-5e05b846a8e3"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Pago Suscripcion",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "353daf46-b271-4ac2-a97d-5b56f6fa25e3"
+              ]
+            },
+            "labels": [
+              "Pago Suscripcion"
+            ],
+            "id": "72494da6-642f-43ec-b007-8054a77a0292",
+            "source": {
+              "cell": "77e632f2-0b55-49f0-a675-2609adfc232f",
+              "port": "f94ec8f9-8524-4212-a3e4-e88e47f8c789"
+            },
+            "target": {
+              "cell": "9f130e04-a1df-4aaa-acc4-985899c593b6",
+              "port": "da111720-eefa-4535-bcbc-4dca7d37d137"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Contenido Dispo",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "53e2d4b3-7de3-4686-89c5-2897848388f9"
+              ]
+            },
+            "labels": [
+              "Contenido Dispo"
+            ],
+            "id": "6b2f496b-d3f8-4b1a-9c70-ca3585640a95",
+            "source": {
+              "x": 340,
+              "y": 120
+            },
+            "target": {
+              "cell": "82c2be05-0ca4-4cb8-a405-9c439db9c7e4",
+              "port": "19d6bdb5-e4fd-4dac-9077-25a462381d8c"
             }
           },
           {
